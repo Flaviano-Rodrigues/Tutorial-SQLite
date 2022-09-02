@@ -1,6 +1,6 @@
 # Banco de Dados Nativo do Python
 
-### **Sim**, Python tem um banco de dados **nativo** sem a necessidade de intalar **nada**, e vamos aprender a usar ele.
+### **Sim**, Python tem um banco de dados **nativo** sem a necessidade de instalar **nada**, e vamos aprender a usar ele.
 
 <br>
 <br>
