@@ -120,7 +120,7 @@ Outros comandos SQL existentes:
 <br>
 <br>
 
-### **[Veja como ficou o código completo]()**
+### **[Veja como ficou o código completo](https://github.com/Flaviano-Rodrigues/Python/blob/master/main.py)**
 
 <br>
 <br>
