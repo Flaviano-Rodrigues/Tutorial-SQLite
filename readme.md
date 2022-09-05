@@ -1,8 +1,15 @@
 # Banco de Dados Nativo do Python
 
+![GitHub forks](https://img.shields.io/github/forks/Flaviano-Rodrigues/Tutorial-SQLite?style=flat-square&label=Forks)
+![GitHub Repo stars](https://img.shields.io/github/stars/flaviano-rodrigues/Tutorial-SQLite?style=flat-square&label=Stars)
+![GitHub watchers](https://img.shields.io/github/watchers/flaviano-rodrigues/Tutorial-SQLite?label=Views&style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/flaviano-rodrigues/tutorial-sqlite?label=Size&style=flat-square)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/flaviano-rodrigues/tutorial-sqlite?label=Files&style=flat-square)
+<br>
+<br>
+
 ### **Sim**, Python tem um banco de dados **nativo** sem a necessidade de instalar **nada**, e vamos aprender a usar ele.
 
-<br>
 <br>
 
 Me chamo **Flaviano**, sou **Desenvolvedor Full-Stack** e estou aqui para te ensinar a usar o **SQLite**. Banco de Dados nativo do Python.
@@ -129,3 +136,10 @@ Outros comandos SQL existentes:
 
 
 Esse foi um tutorial bem simples, mas espero que tenha ajudado você a entender um pouco mais sobre o **SQLite**. Se você tiver alguma dúvida, pode perguntar nos comentários. Se você gostou do tutorial, deixe um like e compartilhe com seus amigos. Até a próxima! :D
+
+<br>
+<br>
+
+# Lincença:
+
+[GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
