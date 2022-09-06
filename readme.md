@@ -25,7 +25,9 @@ Me chamo **Flaviano**, sou **Desenvolvedor Full-Stack** e estou aqui para te ens
 
 Primeiro importe o módulo **sqlite3**:
 
-    import sqlite3 as sl
+```python
+import sqlite3 as sl
+```
 
 Aqui chamamos ele de `sl` para facilitar a digitação. Mas você pode chamar de qualquer nome.
 
@@ -34,7 +36,10 @@ Aqui chamamos ele de `sl` para facilitar a digitação. Mas você pode chamar de
 
 ### Agora vamos criar uma conexão com o banco de dados:
 
-    banco = sl.connect('banco.db')
+```python
+banco = sl.connect('banco.db')
+```
+    
 
 Aqui criamos uma variável chamada `banco` e usamos o método `connect()` para criar uma conexão com o banco de dados. O método `connect()` recebe como parâmetro o nome do banco de dados, que no caso é `banco.db`. Se o banco de dados não existir, ele será criado.
 
@@ -44,14 +49,16 @@ Aqui criamos uma variável chamada `banco` e usamos o método `connect()` para c
 ### Banco criado, agora vamos criar uma tabela:
 > Tabela é como costumamos chamar as "pastas" do banco de dados.
     
-    with banco:
-        banco.execute("""
-            CREATE TABLE USER (
-                id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-            name TEXT,
-            age INTEGER
-        );
-        """)
+```python
+with banco:
+    banco.execute("""
+        CREATE TABLE USER (
+            id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+        name TEXT,
+        age INTEGER
+    );
+    """)
+```
 
 Aqui usamos o método `execute()` para executar o comando SQL. O comando SQL é uma linguagem de consulta estruturada, usada para criar, modificar e extrair dados de um banco de dados relacional. 
 <br><br>
@@ -62,16 +69,18 @@ Usamos também o `CREATE TABLE USER` para criar uma tabela chamada `USER`. Dentr
 
 ### Agora vamos inserir dados na tabela:
 
-    sql = 'INSERT INTO USER (id, name, age) values(?, ?, ?)'
+```python
+sql = 'INSERT INTO USER (id, name, age) values(?, ?, ?)'
 
-    data = [
-        (1, 'Flaviano', 18),
-        (2, 'Bob', 22),
-        (3, 'Chris ', 23)
-    ]
+data = [
+    (1, 'Flaviano', 18),
+    (2, 'Bob', 22),
+    (3, 'Chris ', 23)
+]
 
-    with banco:
-        banco.executemany(sql, data)
+with banco:
+    banco.executemany(sql, data)
+```
 
 Atribuímos a variável `sql` o comando SQL para inserir dados na tabela. O `?` é um **placeholder**, que é um espaço reservado para um valor que será inserido posteriormente.
 <br><br>
@@ -82,10 +91,12 @@ Já a variável `data` é uma lista de tuplas. Cada tupla representa uma linha q
 
 ### Agora vamos selecionar os dados da tabela:
 
-    with banco:
-        data = banco.execute('SELECT * FROM USER')
-        for linha in data:
-            print(linha)
+```python
+with banco:
+    data = banco.execute('SELECT * FROM USER')
+    for linha in data:
+        print(linha)
+```
 
 
 Atribuímos a variavel `data` um execute do banco com o valor `SELECT * FROM USER` para selecionar todos os dados da tabela `USER` e usamos um `for` para percorrer a variável `data` e imprimir cada linha.
@@ -93,10 +104,11 @@ Atribuímos a variavel `data` um execute do banco com o valor `SELECT * FROM USE
 <br>
 Resultado:
 
-    (1, 'Flaviano', 18)
-    (2, 'Bob', 22)
-    (3, 'Chris ', 23)
-
+```python
+(1, 'Flaviano', 18)
+(2, 'Bob', 22)
+(3, 'Chris ', 23)
+```
 
 <br>
 Comandos SQL Usados Nesse Tutorial:
